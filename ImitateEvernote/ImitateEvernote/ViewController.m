@@ -7,21 +7,77 @@
 //
 
 #import "ViewController.h"
+#import "JustinCollectionViewFlowLayout.h"
 
-@interface ViewController ()
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+static const NSInteger rowNumber = 20;
+static const CGFloat topPadding = 20;
+static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
+
+
+@interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+/// 渐变色
+@property (nonatomic, strong) NSMutableArray *colorArray;
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
-
 @implementation ViewController
+
+#pragma maek - lazy loading
+- (NSMutableArray *)colorArray {
+    if (_colorArray == nil) {
+        _colorArray = [NSMutableArray array];
+        for (int i = 0; i < rowNumber; i++) {
+//            UIColor *color = [UIColor colorWithHue:(100 + i*6) % 360 / 360 saturation:0.8 brightness:1.0 alpha:1.0];
+            UIColor *color = [UIColor colorWithRed: i * 10/255.0 green:(255.0 - i*10)/255.0 blue:100.0/255.0 alpha:1.0];
+            [_colorArray addObject:color];
+        }
+        
+    }
+    return _colorArray;
+}
+
+- (UICollectionView *)collectionView {
+    if (_collectionView == nil) {
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, topPadding, SCREEN_WIDTH, SCREEN_HEIGHT - topPadding) collectionViewLayout: [[JustinCollectionViewFlowLayout alloc] init]];
+        
+        _collectionView.backgroundColor = [UIColor colorWithRed:56.0/255.0 green:51.0/255.0 blue:76.0/255.0 alpha:1.0];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        _collectionView.alwaysBounceVertical = false;
+        _collectionView.contentInset = UIEdgeInsetsMake(0, 0, topPadding, 0);
+    }
+    return _collectionView;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor colorWithRed:56.0/255.0 green:51.0/255.0 blue:76.0/255.0 alpha:1.0];
+    [self.view addSubview:self.collectionView];
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kReuseIdentiyID];
+}
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return self.colorArray.count;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kReuseIdentiyID forIndexPath:indexPath];
+    cell.backgroundColor = self.colorArray[indexPath.section];
+    
+    return cell;
 }
 
 @end

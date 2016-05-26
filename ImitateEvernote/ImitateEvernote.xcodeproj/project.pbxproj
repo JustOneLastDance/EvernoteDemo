@@ -13,6 +13,7 @@
 		E40D2CCC1CF4569600E6687C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCA1CF4569600E6687C /* Main.storyboard */; };
 		E40D2CCE1CF4569600E6687C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCD1CF4569600E6687C /* Assets.xcassets */; };
 		E40D2CD11CF4569600E6687C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */; };
+		E40D2CDA1CF46BA900E6687C /* JustinCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E40D2CCD1CF4569600E6687C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E40D2CD01CF4569600E6687C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E40D2CD21CF4569600E6687C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E40D2CD81CF46BA900E6687C /* JustinCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustinCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustinCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				E40D2CC51CF4569600E6687C /* AppDelegate.m */,
 				E40D2CC71CF4569600E6687C /* ViewController.h */,
 				E40D2CC81CF4569600E6687C /* ViewController.m */,
+				E40D2CD81CF46BA900E6687C /* JustinCollectionViewFlowLayout.h */,
+				E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */,
 				E40D2CCA1CF4569600E6687C /* Main.storyboard */,
 				E40D2CCD1CF4569600E6687C /* Assets.xcassets */,
 				E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			files = (
 				E40D2CC91CF4569600E6687C /* ViewController.m in Sources */,
 				E40D2CC61CF4569600E6687C /* AppDelegate.m in Sources */,
+				E40D2CDA1CF46BA900E6687C /* JustinCollectionViewFlowLayout.m in Sources */,
 				E40D2CC31CF4569600E6687C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +270,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImitateEvernote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Avazu.www.ImitateEvernote;
+				PRODUCT_BUNDLE_IDENTIFIER = puppy.ImitateEvernote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -275,7 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImitateEvernote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Avazu.www.ImitateEvernote;
+				PRODUCT_BUNDLE_IDENTIFIER = puppy.ImitateEvernote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -299,6 +305,7 @@
 				E40D2CD71CF4569600E6687C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
