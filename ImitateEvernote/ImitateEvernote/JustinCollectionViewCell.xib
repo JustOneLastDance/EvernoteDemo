@@ -91,6 +91,7 @@ When I arrive in my office each morning, I’m greeted by framed photos of Dr. K
             </variation>
             <connections>
                 <outlet property="backButton" destination="N3w-Cq-5HD" id="Xmf-2G-NOl"/>
+                <outlet property="labelLeadCons" destination="xUd-bY-UXl" id="Ldy-TF-sgd"/>
                 <outlet property="textView" destination="hCE-7T-Gg3" id="OS6-wB-wWJ"/>
                 <outlet property="titleLabel" destination="4Bk-9j-JEk" id="tuU-mA-IH9"/>
                 <outlet property="titleLine" destination="n4g-G6-qYz" id="pAw-C9-pSe"/>

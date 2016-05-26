@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "JustinCollectionViewFlowLayout.h"
 #import "JustinCollectionViewCell.h"
+#import "JustinNoteViewController.h"
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -80,12 +81,27 @@ static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
     JustinCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kReuseIdentiyID forIndexPath:indexPath];
     
     cell.backgroundColor = self.colorArray[indexPath.section];
-    cell.titleLabel.text = [NSString stringWithFormat:@"HelloWorld + %ld", indexPath.section + 1];
+    cell.titleLabel.text = [NSString stringWithFormat:@"HelloWorld + %ld", (indexPath.section + (long)1)];
     cell.backButton.alpha = 0.0;
     cell.textView.alpha = 0.0;
     cell.titleLine.alpha = 0.0;
+    cell.tag = indexPath.section;
     
     return cell;
+}
+
+#pragma maek - UICollectionViewDelegate 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    JustinCollectionViewCell *cell = (JustinCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"evernote" bundle:nil];
+    JustinNoteViewController *vc = [sb instantiateViewControllerWithIdentifier:@"Note"];
+    vc.domainColor = cell.backgroundColor;
+    vc.titleName = cell.titleLabel.text;
+    
+    [self presentViewController:vc animated:true completion:nil];
+    
 }
 
 @end

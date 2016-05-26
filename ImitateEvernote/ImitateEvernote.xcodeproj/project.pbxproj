@@ -10,10 +10,12 @@
 		E40D2CC31CF4569600E6687C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E40D2CC21CF4569600E6687C /* main.m */; };
 		E40D2CC61CF4569600E6687C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E40D2CC51CF4569600E6687C /* AppDelegate.m */; };
 		E40D2CC91CF4569600E6687C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E40D2CC81CF4569600E6687C /* ViewController.m */; };
-		E40D2CCC1CF4569600E6687C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCA1CF4569600E6687C /* Main.storyboard */; };
 		E40D2CCE1CF4569600E6687C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCD1CF4569600E6687C /* Assets.xcassets */; };
 		E40D2CD11CF4569600E6687C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */; };
 		E40D2CDA1CF46BA900E6687C /* JustinCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */; };
+		E4832D051CF6B0FF0019A21E /* EvernoteTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E4832D041CF6B0FF0019A21E /* EvernoteTransition.m */; };
+		E4832D081CF6DC580019A21E /* JustinNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4832D071CF6DC580019A21E /* JustinNoteViewController.m */; };
+		E4832D0B1CF6DD9E0019A21E /* evernote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4832D0A1CF6DD9E0019A21E /* evernote.storyboard */; };
 		E4F2C17A1CF6A18E00D7B59D /* JustinCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F2C1791CF6A18E00D7B59D /* JustinCollectionViewCell.xib */; };
 		E4F2C17D1CF6A1F300D7B59D /* JustinCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F2C17C1CF6A1F300D7B59D /* JustinCollectionViewCell.m */; };
 /* End PBXBuildFile section */
@@ -25,12 +27,16 @@
 		E40D2CC51CF4569600E6687C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E40D2CC71CF4569600E6687C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E40D2CC81CF4569600E6687C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E40D2CCB1CF4569600E6687C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E40D2CCD1CF4569600E6687C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E40D2CD01CF4569600E6687C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E40D2CD21CF4569600E6687C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E40D2CD81CF46BA900E6687C /* JustinCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustinCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustinCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		E4832D031CF6B0FF0019A21E /* EvernoteTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteTransition.h; sourceTree = "<group>"; };
+		E4832D041CF6B0FF0019A21E /* EvernoteTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteTransition.m; sourceTree = "<group>"; };
+		E4832D061CF6DC580019A21E /* JustinNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustinNoteViewController.h; sourceTree = "<group>"; };
+		E4832D071CF6DC580019A21E /* JustinNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustinNoteViewController.m; sourceTree = "<group>"; };
+		E4832D0A1CF6DD9E0019A21E /* evernote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = evernote.storyboard; sourceTree = "<group>"; };
 		E4F2C1791CF6A18E00D7B59D /* JustinCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JustinCollectionViewCell.xib; sourceTree = "<group>"; };
 		E4F2C17B1CF6A1F300D7B59D /* JustinCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustinCollectionViewCell.h; sourceTree = "<group>"; };
 		E4F2C17C1CF6A1F300D7B59D /* JustinCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustinCollectionViewCell.m; sourceTree = "<group>"; };
@@ -66,16 +72,14 @@
 		E40D2CC01CF4569600E6687C /* ImitateEvernote */ = {
 			isa = PBXGroup;
 			children = (
-				E4F2C1791CF6A18E00D7B59D /* JustinCollectionViewCell.xib */,
-				E4F2C17B1CF6A1F300D7B59D /* JustinCollectionViewCell.h */,
-				E4F2C17C1CF6A1F300D7B59D /* JustinCollectionViewCell.m */,
+				E4832D091CF6DC740019A21E /* Controller */,
+				E4832D021CF6B04F0019A21E /* Cell */,
 				E40D2CC41CF4569600E6687C /* AppDelegate.h */,
 				E40D2CC51CF4569600E6687C /* AppDelegate.m */,
-				E40D2CC71CF4569600E6687C /* ViewController.h */,
-				E40D2CC81CF4569600E6687C /* ViewController.m */,
 				E40D2CD81CF46BA900E6687C /* JustinCollectionViewFlowLayout.h */,
 				E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */,
-				E40D2CCA1CF4569600E6687C /* Main.storyboard */,
+				E4832D031CF6B0FF0019A21E /* EvernoteTransition.h */,
+				E4832D041CF6B0FF0019A21E /* EvernoteTransition.m */,
 				E40D2CCD1CF4569600E6687C /* Assets.xcassets */,
 				E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */,
 				E40D2CD21CF4569600E6687C /* Info.plist */,
@@ -90,6 +94,28 @@
 				E40D2CC21CF4569600E6687C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4832D021CF6B04F0019A21E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E4F2C1791CF6A18E00D7B59D /* JustinCollectionViewCell.xib */,
+				E4F2C17B1CF6A1F300D7B59D /* JustinCollectionViewCell.h */,
+				E4F2C17C1CF6A1F300D7B59D /* JustinCollectionViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		E4832D091CF6DC740019A21E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E40D2CC71CF4569600E6687C /* ViewController.h */,
+				E40D2CC81CF4569600E6687C /* ViewController.m */,
+				E4832D061CF6DC580019A21E /* JustinNoteViewController.h */,
+				E4832D071CF6DC580019A21E /* JustinNoteViewController.m */,
+				E4832D0A1CF6DD9E0019A21E /* evernote.storyboard */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +178,8 @@
 			files = (
 				E40D2CD11CF4569600E6687C /* LaunchScreen.storyboard in Resources */,
 				E40D2CCE1CF4569600E6687C /* Assets.xcassets in Resources */,
+				E4832D0B1CF6DD9E0019A21E /* evernote.storyboard in Resources */,
 				E4F2C17A1CF6A18E00D7B59D /* JustinCollectionViewCell.xib in Resources */,
-				E40D2CCC1CF4569600E6687C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4832D081CF6DC580019A21E /* JustinNoteViewController.m in Sources */,
 				E40D2CC91CF4569600E6687C /* ViewController.m in Sources */,
 				E4F2C17D1CF6A1F300D7B59D /* JustinCollectionViewCell.m in Sources */,
+				E4832D051CF6B0FF0019A21E /* EvernoteTransition.m in Sources */,
 				E40D2CC61CF4569600E6687C /* AppDelegate.m in Sources */,
 				E40D2CDA1CF46BA900E6687C /* JustinCollectionViewFlowLayout.m in Sources */,
 				E40D2CC31CF4569600E6687C /* main.m in Sources */,
@@ -175,14 +203,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E40D2CCA1CF4569600E6687C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E40D2CCB1CF4569600E6687C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
