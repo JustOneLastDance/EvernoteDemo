@@ -14,6 +14,8 @@
 		E40D2CCE1CF4569600E6687C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCD1CF4569600E6687C /* Assets.xcassets */; };
 		E40D2CD11CF4569600E6687C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */; };
 		E40D2CDA1CF46BA900E6687C /* JustinCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */; };
+		E4F2C17A1CF6A18E00D7B59D /* JustinCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F2C1791CF6A18E00D7B59D /* JustinCollectionViewCell.xib */; };
+		E4F2C17D1CF6A1F300D7B59D /* JustinCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F2C17C1CF6A1F300D7B59D /* JustinCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		E40D2CD21CF4569600E6687C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E40D2CD81CF46BA900E6687C /* JustinCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustinCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustinCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		E4F2C1791CF6A18E00D7B59D /* JustinCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JustinCollectionViewCell.xib; sourceTree = "<group>"; };
+		E4F2C17B1CF6A1F300D7B59D /* JustinCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustinCollectionViewCell.h; sourceTree = "<group>"; };
+		E4F2C17C1CF6A1F300D7B59D /* JustinCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustinCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,9 @@
 		E40D2CC01CF4569600E6687C /* ImitateEvernote */ = {
 			isa = PBXGroup;
 			children = (
+				E4F2C1791CF6A18E00D7B59D /* JustinCollectionViewCell.xib */,
+				E4F2C17B1CF6A1F300D7B59D /* JustinCollectionViewCell.h */,
+				E4F2C17C1CF6A1F300D7B59D /* JustinCollectionViewCell.m */,
 				E40D2CC41CF4569600E6687C /* AppDelegate.h */,
 				E40D2CC51CF4569600E6687C /* AppDelegate.m */,
 				E40D2CC71CF4569600E6687C /* ViewController.h */,
@@ -144,6 +152,7 @@
 			files = (
 				E40D2CD11CF4569600E6687C /* LaunchScreen.storyboard in Resources */,
 				E40D2CCE1CF4569600E6687C /* Assets.xcassets in Resources */,
+				E4F2C17A1CF6A18E00D7B59D /* JustinCollectionViewCell.xib in Resources */,
 				E40D2CCC1CF4569600E6687C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40D2CC91CF4569600E6687C /* ViewController.m in Sources */,
+				E4F2C17D1CF6A1F300D7B59D /* JustinCollectionViewCell.m in Sources */,
 				E40D2CC61CF4569600E6687C /* AppDelegate.m in Sources */,
 				E40D2CDA1CF46BA900E6687C /* JustinCollectionViewFlowLayout.m in Sources */,
 				E40D2CC31CF4569600E6687C /* main.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JustinCollectionViewFlowLayout.h"
+#import "JustinCollectionViewCell.h"
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -58,7 +59,8 @@ static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
     
     self.view.backgroundColor = [UIColor colorWithRed:56.0/255.0 green:51.0/255.0 blue:76.0/255.0 alpha:1.0];
     [self.view addSubview:self.collectionView];
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kReuseIdentiyID];
+    UINib *nib = [UINib nibWithNibName:@"JustinCollectionViewCell" bundle:nil];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:kReuseIdentiyID];
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
@@ -74,8 +76,14 @@ static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kReuseIdentiyID forIndexPath:indexPath];
+    
+    JustinCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kReuseIdentiyID forIndexPath:indexPath];
+    
     cell.backgroundColor = self.colorArray[indexPath.section];
+    cell.titleLabel.text = [NSString stringWithFormat:@"HelloWorld + %ld", indexPath.section + 1];
+    cell.backButton.alpha = 0.0;
+    cell.textView.alpha = 0.0;
+    cell.titleLine.alpha = 0.0;
     
     return cell;
 }
