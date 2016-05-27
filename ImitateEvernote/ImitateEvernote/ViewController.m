@@ -10,6 +10,7 @@
 #import "JustinCollectionViewFlowLayout.h"
 #import "JustinCollectionViewCell.h"
 #import "JustinNoteViewController.h"
+#import "EvernoteTransition.h"
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -23,6 +24,7 @@ static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
 /// 渐变色
 @property (nonatomic, strong) NSMutableArray *colorArray;
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) EvernoteTransition *customTransition;
 
 @end
 @implementation ViewController
@@ -54,7 +56,7 @@ static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
     return _collectionView;
 }
 
-
+#pragma maek - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     

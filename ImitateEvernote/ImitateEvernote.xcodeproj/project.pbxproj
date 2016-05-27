@@ -72,17 +72,15 @@
 		E40D2CC01CF4569600E6687C /* ImitateEvernote */ = {
 			isa = PBXGroup;
 			children = (
-				E4832D091CF6DC740019A21E /* Controller */,
-				E4832D021CF6B04F0019A21E /* Cell */,
 				E40D2CC41CF4569600E6687C /* AppDelegate.h */,
 				E40D2CC51CF4569600E6687C /* AppDelegate.m */,
 				E40D2CD81CF46BA900E6687C /* JustinCollectionViewFlowLayout.h */,
 				E40D2CD91CF46BA900E6687C /* JustinCollectionViewFlowLayout.m */,
 				E4832D031CF6B0FF0019A21E /* EvernoteTransition.h */,
 				E4832D041CF6B0FF0019A21E /* EvernoteTransition.m */,
-				E40D2CCD1CF4569600E6687C /* Assets.xcassets */,
-				E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */,
-				E40D2CD21CF4569600E6687C /* Info.plist */,
+				E4832D091CF6DC740019A21E /* Controller */,
+				E4832D021CF6B04F0019A21E /* Cell */,
+				E4832D0C1CF7F3A00019A21E /* Others */,
 				E40D2CC11CF4569600E6687C /* Supporting Files */,
 			);
 			path = ImitateEvernote;
@@ -116,6 +114,16 @@
 				E4832D0A1CF6DD9E0019A21E /* evernote.storyboard */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		E4832D0C1CF7F3A00019A21E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E40D2CCD1CF4569600E6687C /* Assets.xcassets */,
+				E40D2CCF1CF4569600E6687C /* LaunchScreen.storyboard */,
+				E40D2CD21CF4569600E6687C /* Info.plist */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
