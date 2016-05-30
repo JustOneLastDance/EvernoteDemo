@@ -30,6 +30,15 @@ static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
 @implementation ViewController
 
 #pragma maek - lazy loading
+
+// Bug1:没有初始化自定义转场动画
+- (EvernoteTransition *)customTransition {
+    if (_customTransition == nil) {
+        _customTransition = [[EvernoteTransition alloc] init];
+    }
+    return _customTransition;
+}
+
 - (NSMutableArray *)colorArray {
     if (_colorArray == nil) {
         _colorArray = [NSMutableArray array];
@@ -96,11 +105,18 @@ static NSString *kReuseIdentiyID = @"kReuseIdentiyID";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     JustinCollectionViewCell *cell = (JustinCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    NSMutableArray *visibleCells = [self.collectionView visibleCells];
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"evernote" bundle:nil];
     JustinNoteViewController *vc = [sb instantiateViewControllerWithIdentifier:@"Note"];
     vc.domainColor = cell.backgroundColor;
     vc.titleName = cell.titleLabel.text;
+    
+    CGRect finalFrame = CGRectMake(10, self.collectionView.contentOffset.y + 10, SCREEN_WIDTH - 20, SCREEN_HEIGHT - 40);
+    [self.customTransition evernoteTransitionWithSelectCell:cell VisibleCells:visibleCells OriginalFrame:cell.frame FinalFrame:finalFrame PanViewController:vc AndListViewController:self];
+    vc.transitioningDelegate = self.customTransition;
+    
+    vc.noteVCDelegate = self.customTransition;
     
     [self presentViewController:vc animated:true completion:nil];
     

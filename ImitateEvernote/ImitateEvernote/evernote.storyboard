@@ -74,7 +74,6 @@ When I arrive in my office each morning, I’m greeted by framed photos of Dr. K
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="didClickButton" destination="Snj-0J-0ZB" eventType="touchUpInside" id="3L0-d1-MM9"/>
-                                            <action selector="goBack:" destination="Snj-0J-0ZB" eventType="touchUpInside" id="uiA-er-ofG"/>
                                         </connections>
                                     </button>
                                 </subviews>
